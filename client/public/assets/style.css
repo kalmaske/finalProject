@@ -2,11 +2,11 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
 
-  main {
+main {
     flex: 1 0 auto;
-  }
+}
 
 .page-footer {
     padding-top: 20px;
@@ -14,7 +14,7 @@ body {
     background-color: #ee6e73;
 }
 
-.display-3, .lead {
+.display-3 .lead {
 text-align: center;
 font-family: 'Playball', cursive; 
 }
