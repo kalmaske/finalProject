@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const routes = require("./routes");
+const apiRoutes = require("./routes/api/apiRoutes.js");
 
 const db = require("./models");
 
@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 //using api routes
-app.use(routes);
+app.use("/api", apiRoutes);
 
 // Send every request to the React app
 // Define any API routes before this runs
