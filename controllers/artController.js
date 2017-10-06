@@ -7,7 +7,7 @@ module.exports = {
   // GET route for getting all of the Arts
   findAll: function(req, res) {
     // Add sequelize code to find all Arts, and return them to the user with res.json
-    db.Art
+    db.artTable
     .findAll({})
     .then(results => res.json(results))
   },
@@ -16,7 +16,7 @@ module.exports = {
   findById: function(req, res) {
     // Add sequelize code to find a single Art where the id is equal to req.params.id,
     // return the result to the user with res.json
-    db.Art
+    db.artTable
     .findOne({
       where:req.params.id
     })
@@ -29,7 +29,7 @@ module.exports = {
   create: function(req, res) {
     // Add sequelize code for creating a Art using req.body,
     // then return the result using res.json
-    db.Art.create(
+    db.artTable.create(
       req.body
     ).then(dbArts => res.json(dbArts))
   },
@@ -38,7 +38,7 @@ module.exports = {
   remove: function(req, res) {
     // Add sequelize code to delete a Art where the id is equal to req.params.id, 
     // then return the result to the user using res.json
-    db.Art
+    db.artTable
     .destroy({
       where: {
         id: req.params.id
@@ -52,7 +52,7 @@ module.exports = {
   remove: function(req, res) {
     // Add code here to update a Art using the values in req.body, where the id is equal to
     // req.body.id and return the result to the user using res.json
-    db.Art.update({
+    db.artTable.update({
       text: req.body.text
     }, {
       where: {

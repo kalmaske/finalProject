@@ -7,7 +7,7 @@ module.exports = {
   // GET route for getting all of the Photoss
   findAll: function(req, res) {
     // Add sequelize code to find all Photoss, and return them to the user with res.json
-    db.Photos
+    db.photoTable
     .findAll({})
     .then(results => res.json(results))
   },
@@ -16,7 +16,7 @@ module.exports = {
   findById: function(req, res) {
     // Add sequelize code to find a single Photos where the id is equal to req.params.id,
     // return the result to the user with res.json
-    db.Photos
+    db.photoTable
     .findOne({
       where:req.params.id
     })
@@ -29,7 +29,7 @@ module.exports = {
   create: function(req, res) {
     // Add sequelize code for creating a Photos using req.body,
     // then return the result using res.json
-    db.Photos.create(
+    db.photoTable.create(
       req.body
     ).then(dbPhotoss => res.json(dbPhotoss))
   },
@@ -38,7 +38,7 @@ module.exports = {
   remove: function(req, res) {
     // Add sequelize code to delete a Photos where the id is equal to req.params.id, 
     // then return the result to the user using res.json
-    db.Photos
+    db.photoTable
     .destroy({
       where: {
         id: req.params.id
@@ -52,7 +52,7 @@ module.exports = {
   remove: function(req, res) {
     // Add code here to update a Photos using the values in req.body, where the id is equal to
     // req.body.id and return the result to the user using res.json
-    db.Photos.update({
+    db.photoTable.update({
       text: req.body.text
     }, {
       where: {
