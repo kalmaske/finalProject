@@ -1,4 +1,6 @@
-var photoTable = sequelize.define("photoTable", {
+module.exports = function(sequelize, DataTypes) {
+    var photoTable = sequelize.define(
+      "photoTable", {
         userName: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -8,7 +10,7 @@ var photoTable = sequelize.define("photoTable", {
 
         },
         Images:{
-            type:DataType.MEDIUMBLOB,
+            type:DataTypes.BLOB('medium'),
             allowNull:false,
 
         },
@@ -22,3 +24,5 @@ var photoTable = sequelize.define("photoTable", {
     {
         timestamps: false
     });
+    return photoTable
+};

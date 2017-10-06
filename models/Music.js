@@ -1,4 +1,6 @@
-var musicTable = sequelize.define("musicTable", {
+module.exports = function(sequelize, DataTypes) {
+    var musicTable = sequelize.define(
+      "musicTable", {
         userName: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -8,7 +10,7 @@ var musicTable = sequelize.define("musicTable", {
 
         },
         track:{
-            type:DataType.LONGBLOB,
+            type:DataTypes.BLOB('long'),
             allowNull:false,
 
         },
@@ -22,3 +24,6 @@ var musicTable = sequelize.define("musicTable", {
     {
         timestamps: false
     });
+
+    return musicTable;
+};
