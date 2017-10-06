@@ -1,27 +1,34 @@
-# 01-Login
+# Auth0 React Login
 
-## Running the Sample
+This sample demonstrates how to add authentication to a React application with Auth0. The sample makes use of Auth0's hosted login page which provides centralized authentication. The sample uses create-react-app.
 
-Install the dependencies.
+## Getting Started
+
+If you haven't already done so, [sign up](https://auth0.com) for your free Auth0 account and create a new client in the [dashboard](https://manage.auth0.com). Find the **domain** and **client ID** from the settings area and add the URL for your application to the **Allowed Callback URLs** box. If you are using the server provided by the create-react-app, that URL is `http://localhost:3000`.
+
+Clone the repo or download it from the React quickstart page in Auth0's documentation. Install create-react-app globally and the dependencies for the app.
 
 ```bash
+npm install -g create-react-app
+cd 01-Login
 npm install
 ```
 
-Rename `.env.example` to `.env` and replace the values for `AUTH0_CLIENT_ID`, `AUTH0_DOMAIN`, and `AUTH0_CLIENT_SECRET` with your Auth0 credentials. If you don't yet have an Auth0 account, [sign up](https://auth0.com/signup) for free.
+> **Note:** If you are not using create-react-app but are using Babel, you need to add the `stage-0` preset.
 
-```bash
-# copy configuration and replace with your own
-cp .env.example .env
-```
+## Set the Client ID and Domain
 
-Run the app.
+If you download the sample from the quickstart page, it will come pre-populated with the **client ID** and **domain** for your application. If you clone the repo directly from Github, rename the `auth0-variables.js.example` file to `auth0-variables.js` and provide the **client ID** and **domain** there. This file is located in `src/Auth/`.
+
+## Run the Application
+
+The development server that comes with create-react-app can be used to serve the application.
 
 ```bash
 npm start
 ```
 
-The app will be served at `localhost:3000`.
+The application will be served at `http://localhost:3000`.
 
 ## What is Auth0?
 
@@ -34,9 +41,9 @@ Auth0 helps you to:
 * Analytics of how, when and where users are logging in.
 * Pull data from other sources and add it to the user profile, through [JavaScript rules](https://docs.auth0.com/rules).
 
-## Create a free account in Auth0
+## Create a free Auth0 account
 
-1. Go to [Auth0](https://auth0.com) and click Sign Up.
+1. Go to [Auth0](https://auth0.com/signup) and click Sign Up.
 2. Use Google, GitHub or Microsoft Account to login.
 
 ## Issue Reporting
@@ -49,4 +56,6 @@ If you have found a bug or if you have a feature request, please report them at 
 
 ## License
 
-This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
+This project is licensed under the MIT license. See the [LICENSE](LICENSE.txt) file for more info.
+
+
