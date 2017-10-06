@@ -1,42 +1,37 @@
-# Create React Express App
+# Aggrandize..
 
-## About This Boilerplate
+Project Overview & Motivation..
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+     - Aggrandize is a beacon for those suffering from depression and mental illness. 
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+     - It gives freedom of expression to users in need of liberating their innermost turmoil in a multitude of platforms. 
 
-## Starting the app locally
+     - It allows users to showcase poetry, short stories, photography, originally composed music, mini films, and video through social media and an aggregate website.
 
-Start by installing front and backend dependencies. While in this directory, run the following commands:
+     - The application gives those voice who would otherwise stifle their muse and remain disjointed from the staggering population languishing from mental illness. 
 
-```
-yarn install
-cd client
-yarn install
-cd ..
-``
+     - The ingenuity of the application stems from its ability to platform creative expression, encourage and support connection among users, raises awareness of mental illness, and boons a healthy means to tackle pernicious emotions. 
 
-After both installations complete, run the following command in your terminal:
 
-```
-yarn start
-```
+Technologies used..
 
-That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+      -HTML
+      -CSS
+      -Express
+      -NodeJS
+      -Express
+      -Auth 0
+      -Mysql
+      -ReactJS
+      -Visual Studio
+      -REST API
+      -AJAX
+      -Beautify
+      -Bootstrap
+      -MVC Paradigm
+      -Git
+      -Github
+      -Heroku 
+      -Javascript
 
-## Deployment (Heroku)
 
-After confirming that you have an up to date git repository and a Heroku app created, complete the following:
-
-1. Build the React app for production by running the following command:
-
-```
-yarn build
-```
-
-2. Add and commit all changes to git
-
-3. Push to Heroku
-
-If all previous steps were followed correctly, your application should be deployed to Heroku!
