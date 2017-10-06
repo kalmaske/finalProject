@@ -1,3 +1,6 @@
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('media_db', 'root', 'Newchapter_2017');
+
 var artTable = sequelize.define("artTable", {
         userName: {
             type: DataTypes.STRING,
@@ -22,3 +25,5 @@ var artTable = sequelize.define("artTable", {
     {
         timestamps: false
     });
+
+    
