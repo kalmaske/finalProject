@@ -1,4 +1,6 @@
-var vidTable = sequelize.define("vidTable", {
+module.exports = function(sequelize, DataTypes) {
+    var vidTable = sequelize.define(
+      "vidTable", {
         userName: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -8,7 +10,7 @@ var vidTable = sequelize.define("vidTable", {
 
         },
         video:{
-            type:DataType.LONGBLOB,
+            type:DataTypes.BLOB('long'),
             allowNull:false,
 
         },
@@ -22,3 +24,6 @@ var vidTable = sequelize.define("vidTable", {
     {
         timestamps: false
     });
+
+    return vidTable;
+};

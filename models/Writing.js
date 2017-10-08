@@ -1,4 +1,6 @@
-var writingTable = sequelize.define("writingTable", {
+module.exports = function(sequelize, DataTypes) {
+    var writingTable = sequelize.define(
+      "writingTable", {
         userName: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -17,3 +19,6 @@ var writingTable = sequelize.define("writingTable", {
     {
         timestamps: false
     });
+
+    return writingTable;
+};
