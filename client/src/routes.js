@@ -18,9 +18,9 @@ const handleAuthentication = (nextState, replace) => {
   }
 }
 
-const App = () => {
+// const App = () => {
 
-}
+// }
 
 export const makeMainRoutes = () => {
   return (
