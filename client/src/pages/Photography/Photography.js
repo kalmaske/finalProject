@@ -39,6 +39,14 @@ render() {
 
 <h1>Photography Post</h1>
 
+<div className="container">
+  <img src="..." class="rounded float-left" alt="..." />
+  <img src="..." class="rounded float-center" alt="..." />
+  <img src="..." class="rounded float-right" alt="..." />
+</div>
+
+
+
   );
  }
 }
