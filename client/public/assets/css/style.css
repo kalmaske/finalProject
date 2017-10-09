@@ -1,3 +1,95 @@
+.titleStuffing {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#redSauce {
+  color: #940e02;
+}
+
+#redSauce:hover {
+  color: tomato;
+}
+
+#orangeSauce {
+  color: #cc5200
+}
+
+#orangeSauce:hover {
+  color: orange
+}
+
+#yellowSauce {
+  color: goldenrod;
+}
+
+#yellowSauce:hover {
+  color: yellow;
+}
+
+#greenSauce {
+  color: #006600;
+}
+
+#greenSauce:hover {
+  color: limegreen;
+}
+
+#blueSauce {
+  color: rgb(5, 2, 165);
+}
+
+#blueSauce:hover {
+  color: #2D98FC;
+}
+
+#violetSauce {
+  color: #400080;
+}
+
+#violetSauce:hover {
+  color: #8c1aff;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+
 .page-footer {
     padding-top: 20px;
     color: #fff;
