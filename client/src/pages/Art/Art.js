@@ -37,21 +37,21 @@ class Art extends Component {
 render() {
   return (
 
-  <script type="text/javascript" >
-      $('#myCarousel').on('slide.bs.carousel', function() => {      
+  <script type="text/javascript">
+      $('#myCarousel').on('slide.bs.carousel', function () {      
         $('.carousel').carousel()
       });
 </ script>
 
-<div classNameName="container">    
-  <div classNameName="row">    
-      <div classNameName="col-md-12">
+<div className="container">    
+  <div className="row">    
+      <div className="col-md-12">
           <center><h1>Art Posts</ h1></ center>
       </ div>
   </ div>
 </ div>            
 
-<div classNameName="container">  
+<div className="container">  
 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
 <div className="carousel-inner" role="listbox">
   <div className="carousel-item active">
@@ -78,19 +78,19 @@ render() {
   
 
 
-<div classNameName="container">
-  <div classNameName="row">
-    <div classNameName="col-md-4">
-      <img src="../public/assets/images/QuinniArtwork.jpg" alt="Sound of my Heart" classNameName="img-thumbnail" />
-        <div classNameName="caption">by Qinni</div>
+<div className="container">
+  <div className="row">
+    <div className="col-md-4">
+      <img src="../public/assets/images/QuinniArtwork.jpg" alt="Sound of my Heart" className="img-thumbnail" />
+        <div className="caption">by Qinni</div>
     </ div>
-    <div classNameName="col-md-4">
-      <img src="../public/assets/images/QuinniArtwork.jpg" alt="Sound of my Heart" classNameName="img-thumbnail" />
-        <div classNameName="caption"><a href="https://qinni.deviantart.com/" target="_blank">Qinni</ a></ div>
+    <div className="col-md-4">
+      <img src="../public/assets/images/QuinniArtwork.jpg" alt="Sound of my Heart" className="img-thumbnail" />
+        <div className="caption"><a href="https://qinni.deviantart.com/" target="_blank">Qinni</ a></ div>
     </ div>
-    <div classNameName="col-md-4">
-      <div classNameName="user"></ div>
-        <div classNameName="caption"></ div>
+    <div className="col-md-4">
+      <div className="user"></ div>
+        <div className="caption"></ div>
     </ div>
   </ div>
 </ div><br />
