@@ -40,12 +40,10 @@ render() {
 <h1>Photography Post</h1>
 
 <div className="container">
-  <img src="..." class="rounded float-left" alt="..." />
-  <img src="..." class="rounded float-center" alt="..." />
-  <img src="..." class="rounded float-right" alt="..." />
+  <img src="..." className="rounded float-left" alt="..." />
+  <img src="..." className="rounded float-center" alt="..." />
+  <img src="..." className="rounded float-right" alt="..." />
 </div>
-
-
 
   );
  }
