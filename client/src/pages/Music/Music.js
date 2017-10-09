@@ -37,27 +37,27 @@ class Music extends Component {
 render() {
   return (
 
-    <div class="container">
-      <div class="row">
-          <div class="col-md-6">
-              <div class="music">
+    <div className="container">
+      <div className="row">
+          <div className="col-md-6">
+              <div className="music">
  
               </div>
-          <div class="col-md-6">
-              <div class="music">
+          <div className="col-md-6">
+              <div className="music">
 
               </div>
           </div>    
           </div>
       </div>       
-      <div class="row">      
-          <div class="col-md-6">
-              <div class="musDes">
+      <div className="row">      
+          <div className="col-md-6">
+              <div className="musDes">
                   
               </div>
           </div>
-          <div class="col-md-6">
-                <div class="musDes">
+          <div className="col-md-6">
+                <div className="musDes">
                     
                 </div>
           </div>    
