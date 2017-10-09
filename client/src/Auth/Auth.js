@@ -5,7 +5,8 @@ export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'uncc-final-project.auth0.com',
     clientID: 'z6iNKD4mFl491gfKpynDyAKnpFSrdiAN',
-    redirectUri: 'http://localhost:3000/callback',
+    //redirectUri: 'http://localhost:3000/profile',
+    redirectUri:'https://dry-citadel-42422.herokuapp.com/profile',
     audience: 'https://uncc-final-project.auth0.com/userinfo',
     responseType: 'token id_token',
     scope: 'openid'
@@ -26,7 +27,7 @@ export default class Auth {
     this.auth0.parseHash((err, authResult) => {
       if (authResult && authResult.accessToken && authResult.idToken) {
         this.setSession(authResult);
-        history.replace('/');
+        history.replace('/profile');
       } else if (err) {
         history.replace('/');
         console.log(err);
@@ -42,7 +43,7 @@ export default class Auth {
     localStorage.setItem('id_token', authResult.idToken);
     localStorage.setItem('expires_at', expiresAt);
     // navigate to the home route
-    history.replace('/');
+    history.replace('/profile');
   }
 
   logout() {
