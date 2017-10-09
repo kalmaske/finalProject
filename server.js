@@ -21,6 +21,7 @@ app.use(bodyParser.json());
 //using api routes
 app.use("/api", apiRoutes);
 
+
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function (req, res) {
