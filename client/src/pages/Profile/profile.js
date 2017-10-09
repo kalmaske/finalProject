@@ -1,11 +1,11 @@
 import React from "react";
-import { Container } from "../../components/Grid";
+// import { Container } from "../../components/Grid";
 //import Jumbotron from "../../components/Jumbotron";
 
 const profile = () =>
-  <Container fluid>
-        <div class="row">
-            <div class="col-md-4">
+  <div className="container">
+        <div className="row">
+            <div className="col-md-4">
                 <img src="./assets/images/favicon.png" alt="Logo" />
                 <h2>About Me</h2>
                 <p>Stuff goes here about yourself for your profile. 
@@ -21,7 +21,7 @@ const profile = () =>
                 PageMaker including versions of Lorem Ipsum.</p>
             <hr width="1" size="500" />
             </div>
-            <div class="col-md-8">
+            <div className="col-md-8">
                 <h1>Recent Posts</h1><br />
                 <h3>Art</h3>
                 <div></div>
@@ -40,6 +40,7 @@ const profile = () =>
                 <hr />
             </div>
         </div>
-  </Container>;
+    </div>
+;
 
 export default profile;

@@ -1,21 +1,21 @@
 import React from "react";
-import { Col, Row, Container } from "../../components/Grid";
-import Jumbotron from "../../components/Jumbotron";
+// import { Col, Row, Container } from "../../components/Grid";
+// import Jumbotron from "../../components/Jumbotron";
 
 const video = () =>
-  <Container fluid>
-      <div class="row">
-          <div class="col-md-6">
-              <div class="video">
+  <div className="container">
+      <div className="row">
+          <div className="col-md-6">
+              <div className="video">
                 {/* API */}
               </div>
-          <div class="col-md-6">
-              <div class="vidDes">
+          <div className="col-md-6">
+              <div className="vidDes">
 
               </div>
           </div>    
           </div>
       </div>
-  </Container>;
+  </div>;
 
 export default video;

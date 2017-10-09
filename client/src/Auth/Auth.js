@@ -5,7 +5,8 @@ export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'uncc-final-project.auth0.com',
     clientID: 'z6iNKD4mFl491gfKpynDyAKnpFSrdiAN',
-    redirectUri: 'http://localhost:3000/callback',
+    //redirectUri: 'http://localhost:3000/callback',
+    redirectUri:'https://dry-citadel-42422.herokuapp.com/callback',
     audience: 'https://uncc-final-project.auth0.com/userinfo',
     responseType: 'token id_token',
     scope: 'openid'
