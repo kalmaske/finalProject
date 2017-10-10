@@ -20,6 +20,11 @@
   filter: alpha(opacity=75); 
 }
 
+.reImage {
+  width: 200px;
+  height: 100px;
+}
+
 #jumPic {
   width: 400px;
   height: 300px;

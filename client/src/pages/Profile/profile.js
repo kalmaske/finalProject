@@ -8,7 +8,7 @@ const profile = () =>
   <div className="container">
         <div className="row">
             <div className="col-md-4">
-                <img src="./assets/images/favicon.png" alt="Logo" />
+                <img src="./assets/images/favicon1.png" alt="Logo" />
                 <input type="file" accept="image/*" onchange="picChange(event)"/>
                 <h2>About Me</h2>
                 <p>Stuff goes here about yourself for your profile.
@@ -27,22 +27,27 @@ const profile = () =>
             <div className="col-md-8">
                 <h1>Recent Posts</h1><br />
                 <h3>Art</h3>
+                <input type="file" accept="image/*" onchange="picChange(event)"/>
                 <button type="button" onclick="chooseFile();">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Music</h3>
+                <input type="file" accept="image/*" onchange="picChange(event)"/>
                 <button type="button" onclick="chooseFile();">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Photography</h3>
+                <input type="file" accept="image/*" onchange="picChange(event)"/>
                 <button type="button" onclick="chooseFile();">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Writing</h3>
+                <input type="file" accept="image/*" onchange="picChange(event)"/>
                 <button type="button" onclick="chooseFile();">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Video</h3>
+                <input type="file" accept="image/*" onchange="picChange(event)"/>
                 <button type="button" onclick="chooseFile();">Upload Here!</button>
                 <div></div>
                 <hr />
