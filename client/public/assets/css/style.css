@@ -1,3 +1,12 @@
+.btnBox {
+  border-radius: 15px 50px 30px;
+  background: #ac8eb2;
+  padding: 50px; 
+  width: 280px;
+  height: 150px;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+}
 .btn-cool {
   background: #bfe49f
 }
