@@ -1,3 +1,15 @@
+.btn-cool {
+  background: #bfe49f
+}
+.bubble {
+  border-radius: 15px 50px 30px;
+  background: #abc7bb;
+  padding: 20px; 
+  width: 600px;
+  height: 350px;
+  opacity: 0.75;
+  filter: alpha(opacity=75); 
+}
 .titleStuffing {
   font-family: 'Permanent Marker', cursive;
 }
@@ -95,7 +107,7 @@
 .page-footer {
     padding-top: 20px;
     color: #fff;
-    background-color: #0ab1f5;
+    background-color: #b28f8b;
 }
 
 .display-3 .lead {
