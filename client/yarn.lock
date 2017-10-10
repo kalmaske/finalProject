@@ -4470,6 +4470,10 @@ react-dom@^15.5.4:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
+react-file-input@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/react-file-input/-/react-file-input-0.2.5.tgz#a355367d9323d5c6352ddd3cd7ec3582e5c9b245"
+
 react-flip-move@^2.9.14:
   version "2.9.15"
   resolved "https://registry.yarnpkg.com/react-flip-move/-/react-flip-move-2.9.15.tgz#c33c817d394917c6537aba282732350bba384961"
