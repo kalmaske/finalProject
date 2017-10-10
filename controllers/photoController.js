@@ -49,7 +49,7 @@ module.exports = {
   },
 
   // PUT route for updating Photoss
-  remove: function(req, res) {
+  put: function(req, res) {
     // Add code here to update a Photos using the values in req.body, where the id is equal to
     // req.body.id and return the result to the user using res.json
     db.photoTable.update({

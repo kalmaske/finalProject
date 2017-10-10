@@ -28,27 +28,27 @@ const profile = () =>
                 <h1>Recent Posts</h1><br />
                 <h3>Art</h3>
                 <input type="file" accept="image/*" onchange="picChange(event)"/>
-                <button type="button" onclick="chooseFile();">Upload Here!</button>
+                <button type="button" onclick="chooseFile()">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Music</h3>
                 <input type="file" accept="image/*" onchange="picChange(event)"/>
-                <button type="button" onclick="chooseFile();">Upload Here!</button>
+                <button type="button" onclick="chooseFile()">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Photography</h3>
                 <input type="file" accept="image/*" onchange="picChange(event)"/>
-                <button type="button" onclick="chooseFile();">Upload Here!</button>
+                <button type="button" onclick="chooseFile()">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Writing</h3>
                 <input type="file" accept="image/*" onchange="picChange(event)"/>
-                <button type="button" onclick="chooseFile();">Upload Here!</button>
+                <button type="button" onclick="chooseFile()">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Video</h3>
                 <input type="file" accept="image/*" onchange="picChange(event)"/>
-                <button type="button" onclick="chooseFile();">Upload Here!</button>
+                <button type="button" onclick="chooseFile()">Upload Here!</button>
                 <div></div>
                 <hr />
             </div>
