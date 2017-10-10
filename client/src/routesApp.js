@@ -11,6 +11,14 @@ import Art from "./pages/Art";
 import NoMatch from "./pages/NoMatch";
 //import Home from "./pages/Home";
 
+const auth = new Auth();
+
+const handleAuthentication = (nextState, replace) => {
+  if (/access_token|id_token|error/.test(nextState.location.hash)) {
+    auth.handleAuthentication();
+  }
+}
+
 
 const routesApp = () =>
   <Router>
