@@ -1,71 +1,53 @@
 import React, {Components} from "react";
-import API from "../../utils/api";
+import API from "../../utils/API.js";
 
-const panelInstance = (
-  <Panel onClick={ handleClick }>
-    <center>Aggrandize</center>
-  </Panel>
-);
+// class Photography extends Components {
+//   state = {
+//     photography: [],
+//     userName: "",
+//     Images: "",
+//     caption: ""
+//   };
 
-ReactDOM.render(panelInstance, mountNode);
+//   componentDidMount() {
+//     this.loadPhotography();
+//   }
 
-class Photography extends Component {
-  state = {
-    photography: [],
-    userName: "",
-    Images: "",
-    caption: ""
-  };
+//   loadPhotography = () => {
+//     API.getPhotography()
+//       .then(res =>
+//         this.setState({ photography: res.data, userName: "", Images: "", caption: "" })
+//       )
+//       .catch(err => console.log(err));
+//   };
 
-  componentDidMount() {
-    this.loadPhotography();
-  }
+//   handleFormSubmit = event => {
+//     event.preventDefault();
+//     if (this.state.title && this.state.author) {
+//       API.savePhotography({
+//         title: this.state.title,
+//         author: this.state.author,
+//         synopsis: this.state.synopsis
+//       })
+//         .then(res => this.loadPhotography())
+//         .catch(err => console.log(err));
+//     }
+//   };
 
-  loadPhotography = () => {
-    API.getPhotography()
-      .then(res =>
-        this.setState({ photography: res.data, userName: "", Images: "", caption: "" })
-      )
-      .catch(err => console.log(err));
-  };
+// render() {
+//   return (
 
-  handleFormSubmit = event => {
-    event.preventDefault();
-    if (this.state.title && this.state.author) {
-      API.savePhotography({
-        title: this.state.title,
-        author: this.state.author,
-        synopsis: this.state.synopsis
-      })
-        .then(res => this.loadPhotography())
-        .catch(err => console.log(err));
-    }
-  };
-
-render() {
-  return (
-
+const Photography = () =>
+<div>
 <h1>Photography Post</h1>
 
-const thumbnailInstance = (
-<Grid>
-  <Row>
-  <Col xs={6} md={3}>
-    <Thumbnail href="#" alt="171x180" src="/assets/thumbnail.png" />
-  </Col>
-  <Col xs={6} md={3}>
-    <Thumbnail href="#" alt="171x180" src="/assets/thumbnail.png" />
-  </Col>
-  <Col xs={6} md={3}>
-    <Thumbnail href="#" alt="171x180" src="/assets/thumbnail.png" />
-  </Col>
-  </Row>
-</Grid>
-);
 
-ReactDOM.render(thumbnailInstance, mountNode);
-  );
- }
-}
+  <div className="container">
+    <img src="..." className="rounded float-left" alt="..." />
+    <img src="..." className="rounded float-center" alt="..." />
+    <img src="..." className="rounded float-right" alt="..." />
+  </div>
+</div>
+ 
 
 export default Photography;

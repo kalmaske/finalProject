@@ -1,47 +1,48 @@
 import React, {Components} from "react";
-import API from "../../utils/api";
+import API from "../../utils/API";
 
-class Art extends Component {
-  state = {
-    art: [],
-    userName: "",
-    artImage: "",
-    caption: ""
-  };
+// class Art extends Components {
+//   state = {
+//     art: [],
+//     userName: "",
+//     artImage: "",
+//     caption: ""
+//   };
 
-  componentDidMount() {
-    this.loadArt();
-  }
+//   componentDidMount() {
+//     this.loadArt();
+//   };
 
-  loadArt = () => {
-    API.getArt()
-      .then(res =>
-        this.setState({ art: res.data, userName: "", artImage: "", caption: "" })
-      )
-      .catch(err => console.log(err));
-  };
+//   loadArt = () => {
+//     API.getArt()
+//       .then(res =>
+//         this.setState({ art: res.data, userName: "", artImage: "", caption: "" })
+//       )
+//       .catch(err => console.log(err));
+//   };
 
-  handleFormSubmit = event => {
-    event.preventDefault();
-    if (this.state.title && this.state.author) {
-      API.saveArt({
-        title: this.state.title,
-        author: this.state.author,
-        synopsis: this.state.synopsis
-      })
-        .then(res => this.loadArt())
-        .catch(err => console.log(err));
-    }
-  };
+//   handleFormSubmit = event => {
+//     event.preventDefault();
+//     if (this.state.title && this.state.author) {
+//       API.saveArt({
+//         title: this.state.title,
+//         author: this.state.author,
+//         synopsis: this.state.synopsis
+//       })
+//         .then(res => this.loadArt())
+//         .catch(err => console.log(err));
+//     }
+//   };
 
-render() {
-  return (
+// render() {
+//   return (
+const Art = () =>
+<div>
+  
+      {/* {document.getElementById('myCarousel').on('slide.bs.carousel', function () {      
+        document.getElementsByClassName('carousel').carousel()
+      })} */}
 
-  <script type="text/javascript">
-      $('#myCarousel').on('slide.bs.carousel', function () {      
-        $('.carousel').carousel()
-      });
-</ script>
 
 <div className="container">    
   <div className="row">    
@@ -94,8 +95,7 @@ render() {
     </ div>
   </ div>
 </ div><br />
-  );
- }
-}
+</ div>
+
 
 export default Art;
