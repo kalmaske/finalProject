@@ -1,7 +1,134 @@
+.btnBox {
+  border-radius: 15px 50px 30px;
+  background: #ac8eb2;
+  padding: 50px; 
+  width: 280px;
+  height: 150px;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+}
+.btn-cool {
+  background: #bfe49f
+}
+.bubble {
+  border-radius: 15px 50px 30px;
+  background: #abc7bb;
+  padding: 20px; 
+  width: 600px;
+  height: 350px;
+  opacity: 0.75;
+  filter: alpha(opacity=75); 
+}
+
+.reImage {
+  width: 200px;
+  height: 100px;
+}
+
+#jumPic {
+  width: 400px;
+  height: 300px;
+  margin-right: 40px;
+}
+
+.titleStuffing {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#redSauce {
+  color: #940e02;
+}
+
+#redSauce:hover {
+  color: tomato;
+}
+
+#orangeSauce {
+  color: #cc5200
+}
+
+#orangeSauce:hover {
+  color: orange
+}
+
+#yellowSauce {
+  color: goldenrod;
+}
+
+#yellowSauce:hover {
+  color: yellow;
+}
+
+#greenSauce {
+  color: #006600;
+}
+
+#greenSauce:hover {
+  color: limegreen;
+}
+
+#blueSauce {
+  color: rgb(5, 2, 165);
+}
+
+#blueSauce:hover {
+  color: #2D98FC;
+}
+
+#violetSauce {
+  color: #400080;
+}
+
+#violetSauce:hover {
+  color: #8c1aff;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+
 .page-footer {
     padding-top: 20px;
     color: #fff;
-    background-color: #0ab1f5;
+    background-color: #b28f8b;
 }
 
 .display-3 .lead {
@@ -4343,7 +4470,7 @@ li {
   .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-    background-color: #e9ecef;
+    background-image: url("http://wallup.net/wp-content/uploads/2016/05/25/253249-pattern-red-orange-yellow-green-blue-purple-rainbows.jpg");
     border-radius: 0.3rem;
   }
   
@@ -4356,7 +4483,8 @@ li {
   .jumbotron-fluid {
     padding-right: 0;
     padding-left: 0;
-    border-radius: 0;
+    /* border-radius: 0; */
+    border-radius: 25px;
   }
   
   .alert {
