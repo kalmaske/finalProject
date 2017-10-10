@@ -10,6 +10,14 @@ import Profile from "./pages/Profile";
 import Post from "./pages/WritingCreate";
 import NoMatch from "./pages/NoMatch";
 
+const auth = new Auth();
+
+const handleAuthentication = (nextState, replace) => {
+  if (/access_token|id_token|error/.test(nextState.location.hash)) {
+    auth.handleAuthentication();
+  }
+}
+
 
 const routesApp = () =>
   <Router>
