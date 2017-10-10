@@ -1,4 +1,5 @@
 import React from "react";
+import Dropzone from 'react-dropzone';
 // import { Container } from "../../components/Grid";
 //import Jumbotron from "../../components/Jumbotron";
 
@@ -7,6 +8,13 @@ const profile = () =>
         <div className="row">
             <div className="col-md-4">
                 <img src="./assets/images/favicon.png" alt="Logo" />
+            <form>
+                <FileInput name="myImage"
+                   accept=".jpeg,.jpg,.png,.gif"
+                   placeholder="My Image"
+                   className="inputClass"
+                   onChange={this.handleChange} />
+            </form>
                 <h2>About Me</h2>
                 <p>Stuff goes here about yourself for your profile. 
                 Lorem Ipsum is simply dummy text of the printing and 
