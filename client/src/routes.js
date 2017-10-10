@@ -18,9 +18,9 @@ const handleAuthentication = (nextState, replace) => {
   }
 }
 
-// const App = () => {
+const App = () => {
 
-// }
+}
 
 export const makeMainRoutes = () => {
   return (
@@ -33,7 +33,7 @@ export const makeMainRoutes = () => {
           <Route path="/writingCreate" render={(props) => <WritingCreate auth={auth} {...props} />} />
           <Route path="/callback" render={(props) => {
             handleAuthentication(props);
-            return <Callback {...props} /> 
+            return <Callback {...props} />
           }}/>
         </div>
       </Router>
