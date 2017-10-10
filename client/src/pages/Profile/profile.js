@@ -22,10 +22,10 @@ const profile = () =>
                 the release of Letraset sheets containing Lorem Ipsum passages,
                 and more recently with desktop publishing software like Aldus
                 PageMaker including versions of Lorem Ipsum.</p>
-            <hr width="1" size="500" />
+            <hr width="1" size="500"/>
             </div>
             <div className="col-md-8">
-                <h1>Recent Posts</h1><br />
+                <h1>Recent Posts</h1><br/>
                 <h3>Art</h3>
                 <input type="file" accept="image/*" onchange="picChange(event)"/>
                 <button type="button" onclick="chooseFile()">Upload Here!</button>
