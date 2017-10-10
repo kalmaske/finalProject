@@ -19,6 +19,13 @@
   opacity: 0.75;
   filter: alpha(opacity=75); 
 }
+
+#jumPic {
+  width: 400px;
+  height: 300px;
+  margin-right: 40px;
+}
+
 .titleStuffing {
   font-family: 'Permanent Marker', cursive;
 }
