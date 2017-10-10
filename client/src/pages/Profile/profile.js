@@ -32,18 +32,23 @@ const profile = () =>
             <div className="col-md-8">
                 <h1>Recent Posts</h1><br />
                 <h3>Art</h3>
+                <button type="button" onclick="chooseFile();">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Music</h3>
+                <button type="button" onclick="chooseFile();">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Photography</h3>
+                <button type="button" onclick="chooseFile();">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Writing</h3>
+                <button type="button" onclick="chooseFile();">Upload Here!</button>
                 <div></div>
                 <hr />
                 <h3>Video</h3>
+                <button type="button" onclick="chooseFile();">Upload Here!</button>
                 <div></div>
                 <hr />
             </div>

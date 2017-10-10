@@ -1,6 +1,18 @@
 import React, {Components} from "react";
 import API from "../../utils/api";
 
+function handleClick() {
+  alert('You have clicked on me');
+}
+
+const panelInstance = (
+  <Panel onClick={ handleClick }>
+    <center>Aggrandize</center>
+  </Panel>
+);
+
+ReactDOM.render(panelInstance, mountNode);
+
 class Photography extends Component {
   state = {
     photography: [],
@@ -39,12 +51,23 @@ render() {
 
 <h1>Photography Post</h1>
 
-<div className="container">
-  <img src="..." className="rounded float-left" alt="..." />
-  <img src="..." className="rounded float-center" alt="..." />
-  <img src="..." className="rounded float-right" alt="..." />
-</div>
+const thumbnailInstance = (
+<Grid>
+  <Row>
+  <Col xs={6} md={3}>
+    <Thumbnail href="#" alt="171x180" src="/assets/thumbnail.png" />
+  </Col>
+  <Col xs={6} md={3}>
+    <Thumbnail href="#" alt="171x180" src="/assets/thumbnail.png" />
+  </Col>
+  <Col xs={6} md={3}>
+    <Thumbnail href="#" alt="171x180" src="/assets/thumbnail.png" />
+  </Col>
+  </Row>
+</Grid>
+);
 
+ReactDOM.render(thumbnailInstance, mountNode);
   );
  }
 }
