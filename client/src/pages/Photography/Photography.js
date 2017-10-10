@@ -1,10 +1,6 @@
 import React, {Components} from "react";
 import API from "../../utils/api";
 
-function handleClick() {
-  alert('You have clicked on me');
-}
-
 const panelInstance = (
   <Panel onClick={ handleClick }>
     <center>Aggrandize</center>
