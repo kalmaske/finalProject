@@ -22,7 +22,7 @@ class Home extends Component {
       <div className="jumbotron jumbotron-fluid">
           <div className="container">
             <div className="row">
-              <div className="col-md-7" style={{fontFamily: 'Permanent Marker, cursive'}}>>
+              <div className="col-md-7" style={{fontFamily: 'Permanent Marker, cursive'}}>
             <center><h1 className="display-3">Aggrandize</h1>
               <hr />
             <br />
@@ -55,13 +55,14 @@ class Home extends Component {
           <br />
         </div>
         <div className="col-md-6">
-            <center><div style={{fontFamily: 'Permanent Marker, cursive'}}>
-         <h2>Want to Join In?</h2></div></center>
+            <div>
+         <h2></h2></div>
          <center>
            {
               !isAuthenticated() && (
                 <div>
-                  <h2>Want to Join In?</h2>
+                <div style={{fontFamily: 'Permanent Marker, cursive'}}>
+                  <h2>Want to Join In?</h2></div>
                   <Button
                     bsStyle="primary"
                     bsSize="large"
@@ -80,7 +81,7 @@ class Home extends Component {
                     Sign Up
                   </Button>
                   </div>
-                )
+                  )
             }
             {
               isAuthenticated() && (
