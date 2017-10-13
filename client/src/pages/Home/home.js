@@ -22,7 +22,7 @@ class Home extends Component {
       <div className="jumbotron jumbotron-fluid">
           <div className="container">
             <div className="row">
-              <div className="col-md-7" style="font-family: 'Permanent Marker', cursive;">
+              <div className="col-md-7" style={{fontFamily: 'Permanent Marker, cursive'}}>>
             <center><h1 className="display-3">Aggrandize</h1>
               <hr />
             <br />
@@ -40,7 +40,7 @@ class Home extends Component {
     <div className="container">
       <div className="row">
         <div className="col-md-6" >
-            <div style="font-family: 'Permanent Marker', cursive;">  
+            <div style={{fontFamily: 'Permanent Marker, cursive'}}>  
           <center><h2>About the Site</h2></center></div>
           <div className="bubble"><p>At its crux, Name of App is a beacon for those suffering from depression and mental illness. 
           The application gives freedom of expression to users in need of liberating their innermost turmoil in a multitude of platforms. 
@@ -55,7 +55,7 @@ class Home extends Component {
           <br />
         </div>
         <div className="col-md-6">
-            <center><div style="font-family: 'Permanent Marker', cursive;"> 
+            <center><div style={{fontFamily: 'Permanent Marker, cursive'}}>
          <h2>Want to Join In?</h2></div></center>
          <center>
            {
