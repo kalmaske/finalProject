@@ -35,6 +35,14 @@
   font-family: 'Permanent Marker', cursive;
 }
 
+#silverFox {
+  color: #555555
+}
+
+#silverFox:hover {
+  color: #bfbfbf
+}
+
 #redSauce {
   color: #940e02;
 }
