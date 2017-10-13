@@ -8,8 +8,8 @@ const profile = () =>
   <div className="container">
         <div className="row">
             <div className="col-md-4">
-                <img src="./assets/images/favicon1.png" alt="Logo" />
-                <input type="file" accept="image/*" onchange="picChange(event)"/>
+                <img src="./assets/images/favicon1.png" alt="Logo" width="200px" height="150px" />
+                <input type="file" accept="image/*" onchange="picChange(event)" />
                 <h2>About Me</h2>
                 <p>Stuff goes here about yourself for your profile.
                 Lorem Ipsum is simply dummy text of the printing and
